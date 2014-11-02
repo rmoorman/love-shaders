@@ -1,0 +1,62 @@
+[BROKEN][NEEDS CLEANUP][NEEDS COMMENTING][NEEDS EXTERNAL CREDITS][NEEDS INTERNAL CREDITS]
+
+SIMPLE REFRACTION
+       -needs code cleanup
+       -needs commenting
+       -needs license
+
+SIMPLE REFLECTION
+       -broken       
+       -needs cleanup
+       -needs commenting
+       -needs license
+
+REFRACTION+REFLECTION+CHROMATIC ABBERATION
+-needs commenting
+-needs license
+
+BASIC CHROMATIC ABBERATION
+-needs cleanup
+-needs commenting
+-needs license
+
+DESATURATION
+-needs cleanup
+-needs commenting
+-needs license
+
+NOISE (BASIC)
+-needs cleanup
+-needs commenting
+-needs license
+
+VIGNETTE (BASIC)
+-needs cleanup
+-needs commenting
+-needs license
+
+VIGNETTE (ADVANCED)
+-needs cleanup
+-needs commenting
+-needs license
+
+NOT WRITTEN:
+lens-flare (basic, based on point)
+lens-flare (anamorphic, based on point)
+lens-flare (telescoping, based on point)
+blur (basic)
+blur (separable)
+blur (poisson?)
+simple bloom (separable, refer to blur)
+high-end/hdr-bloom (possible in love?)
+gradient shader
+motion blur (velocityfield-based)
+SDF text?
+
+preprocessor example
+static dithering?
+
+GENERAL TODO:
+------------
+
+[ ] Add license to repo
