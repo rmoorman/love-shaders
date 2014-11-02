@@ -25,7 +25,6 @@ function love.load(args)
    loadShader()
    background = love.graphics.newImage(backgroundFile)
    love.window.setMode(1800, 400, {fullscreen = false})
-   hdrCanvas = love.graphics.newCanvas(love.window.getWidth(), love.window.getHeight(), "hdr")
    local vertices = {
       {1800, 100, 0,   0},
       {1800,   0, 0,   0},
@@ -37,6 +36,9 @@ end
 
 
 function love.draw()
+   -- remember that if you want to draw to canvases, you need to either
+   -- dither each time you draw to a canvas, or use a hdr canvas and dither
+   -- once at the end.
    current:send("seed", {math.sin(love.timer.getTime()), math.cos(love.timer.getTime())})
    love.graphics.setColor(255, 255, 255, 255)
    love.graphics.setShader(current)
@@ -51,9 +53,6 @@ function love.draw()
    love.graphics.setShader(simpleShader)
    love.graphics.draw(mesh, 0, 300)
    love.graphics.setShader()
-   -- love.graphics.setShader(shader)
-   -- love.graphics.draw(background)
-   -- love.graphics.setShader()
 end
    
 function love.keypressed(key, isrepeat)
