@@ -1,14 +1,20 @@
 #!/bin/env python
 import os
 import subprocess
+import shutil
+
 excluded_folders = ["old", "build", ".git"]
 
 os.chdir("..")
 dirs = filter(lambda x: not x in excluded_folders, os.walk(".").__next__()[1])
 
 def build(directory):
-    subprocess.call(["zip", directory+".zip", "*"], shell=True)
+    os.chdir(directory)
+    subprocess.call("zip -r '" + directory + ".zip' *", shell=True)
+    os.rename(directory+".zip", directory+".love")
+    shutil.move(directory+".love", "../build/")
+    os.chdir("..")
 
 for directory in dirs:
-    build(dir)
+    build(directory)
 
