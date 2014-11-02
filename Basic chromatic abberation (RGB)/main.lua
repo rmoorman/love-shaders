@@ -17,7 +17,7 @@ end
 function love.draw()
    love.graphics.setShader(shader)
    strength = math.sin(love.timer.getTime()*2)
-   shader:send("abberationVector", {strength*math.sin(love.timer.getTime()*7)/120, strength*math.cos(love.timer.getTime()*7)/120})
+   shader:send("abberationVector", {strength*math.sin(love.timer.getTime()*7)/200, strength*math.cos(love.timer.getTime()*7)/200})
    love.graphics.draw(background)
    love.graphics.setShader()
 end
