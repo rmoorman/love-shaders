@@ -1,5 +1,3 @@
-backgroundFile = "bands.png"
-background = nil
 linearShader = nil
 simpleShader = nil
 triangularShader = nil
@@ -23,7 +21,6 @@ end
 
 function love.load(args)
    loadShader()
-   background = love.graphics.newImage(backgroundFile)
    love.window.setMode(1800, 400, {fullscreen = false})
    local vertices = {
       {1800, 100, 0,   0},
