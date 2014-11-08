@@ -1,9 +1,9 @@
 float desaturateLightness(vec4 inputColor){
   // Desaturate by lightness
-  float color = vec4(0.5*(
-			  max(inputColor.r, max(inputColor.g, inputColor.b))
-			  + min(inputColor.r, min(inputColor.g, inputColor.b))
-			  ));
+  float color = 0.5*(
+		     max(inputColor.r, max(inputColor.g, inputColor.b))
+		     + min(inputColor.r, min(inputColor.g, inputColor.b))
+		     );
   return color;
 }
 

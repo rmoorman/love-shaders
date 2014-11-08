@@ -44,14 +44,15 @@ NOT WRITTEN:
 lens-flare (basic, based on point)
 lens-flare (anamorphic, based on point)
 lens-flare (telescoping, based on point)
-blur (basic)
-blur (separable)
 blur (poisson?)
 simple bloom (separable, refer to blur)
 high-end/hdr-bloom (possible in love?)
 gradient shader
 motion blur (velocityfield-based)
 SDF text?
+basic tonemapping
+advanced color-correct
+bokeh?
 
 preprocessor example
 static dithering?
