@@ -1,0 +1,17 @@
+README
+------
+
+This is a small library of (mostly fragment-) shaders for love2d.
+It contains the most common things that people tend to ask for.
+Each shader example comes with a README and a LICENSE file. Check
+those out before using the shader in your project!
+
+Most of these shaders should be fine to use straight in your project;
+they are all tested on AMD (catalyst, radeonhd, OSX), nvidia (proprietary
+linux and proprietary windows) as well as intel (mesa.)
+There may however be possibilities for optimization; I've not put
+particular emphasis on that aspect (and prefer clarity when in doubt.)
+
+Pre-built .love files of all the samples can be found here:
+
+http://virvel.de/~Amadiro/love-shaders/
