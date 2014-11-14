@@ -12,6 +12,9 @@ linux and proprietary windows) as well as intel (mesa.)
 There may however be possibilities for optimization; I've not put
 particular emphasis on that aspect (and prefer clarity when in doubt.)
 
+PREBUILT FILES
+--------------
+
 Pre-built .love files of all the samples can be found here:
 
 http://virvel.de/~Amadiro/love-shaders/
