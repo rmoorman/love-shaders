@@ -1,11 +1,11 @@
-#!/bin/env python
+#!/usr/bin/env python
 import os
 import subprocess
 import shutil
 
 excluded_folders = ["old", "build", ".git"]
 
-os.chdir("..")
+#os.chdir("..")
 dirs = filter(lambda x: not x in excluded_folders, os.walk(".").__next__()[1])
 
 def build(directory):
