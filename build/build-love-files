@@ -6,7 +6,7 @@ import shutil
 excluded_folders = ["old", "build", ".git"]
 
 #os.chdir("..")
-dirs = filter(lambda x: not x in excluded_folders, os.walk(".").__next__()[1])
+dirs = filter(lambda x: not x in excluded_folders, os.walk(".").next()[1])
 
 def build(directory):
     os.chdir(directory)
